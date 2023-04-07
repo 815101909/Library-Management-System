@@ -1,0 +1,5 @@
+com\imooc\reader\mapper\TestMapperTest.class
+com\imooc\reader\mapper\EvaluationMapperTest.class
+com\imooc\reader\service\MemberServiceTest.class
+com\imooc\reader\service\TestServiceTest.class
+com\imooc\reader\service\CategoryServiceTest.class

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vant演示页面</title>
+  <!--基于设备逻辑分辨率进行页面开发，禁止页面缩放-->
+  <meta name="viewpoint" content="width=device,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+  <link rel="stylesheet" href="assets/vant/index.css">
+  <script src="assets/vue/vue.global.js"></script>
+  <script src="assets/vant/vant.min.js"></script>
+  <style>
+    .my-swipe .van-swipe-item {
+      color: #fff;
+      font-size: 20px;
+      line-height: 150px;
+      text-align: center;
+      background-color: #39a9ed;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+      <van-swipe-item>1</van-swipe-item>
+      <van-swipe-item>2</van-swipe-item>
+      <van-swipe-item>3</van-swipe-item>
+      <van-swipe-item>4</van-swipe-item>
+    </van-swipe>
+  </div>
+<script>
+  const main = {
+    data(){
+      return {}
+    }
+  }
+    const app = Vue.createApp(main);
+  app.use(vant);
+  app.use(vant.Lazyload);
+  app.mount("#app");
+
+</script>
+</body>
+</html>
